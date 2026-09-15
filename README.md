@@ -12,16 +12,15 @@ A small set of browser bookmarklets for the [Canvas LMS](https://www.instructure
 
 ## What's in the toolkit
 
-| Tool | What it does |
-| --- | --- |
-| Syllabus Auto-Builder | Builds a syllabus summary — weekly schedule, assignment list, grading breakdown, unpublished items — from the course's modules and assignments, and downloads it as a Word file. |
-| Class Roster Builder | Builds a printable roster with contact and last-activity information. |
-| At-Risk Early Warning Dashboard | Flags students whose grades, submissions or participation suggest they are falling behind. |
-| Peer Comparison Snapshot | Compares one student's activity and scores against the rest of the section. |
-| Re-Engagement Email Drafter | Drafts check-in messages to students who have gone quiet, for you to review and send. |
-| Weekly Announcement Auto-Drafter | Drafts a weekly announcement from what is actually due that week. |
-| Discussion to Word Exporter | Exports a discussion thread, posts and replies in order, to a Word document. |
-| Engagement Report | Summarizes participation across the course over time. |
+| Tool | Run it from | What it does |
+| --- | --- | --- |
+| Syllabus Auto-Builder | A course page | Weekly schedule, assignment list, grading breakdown and unpublished items, built from the course's modules and assignments and downloaded as a Word file. |
+| Class Roster Builder | Anywhere (pick a term) | Full student rosters — name, email, section, last access, grade — for all your courses in that term. |
+| At-Risk Early Warning Dashboard | Anywhere (pick a term) | Flags inactive, low-grade and missing-work students across a term. |
+| Peer Comparison Snapshot | A course page | Anonymized comparison of one student against the rest of the course. |
+| Re-Engagement Email Drafter | Anywhere (pick a term) | Drafts check-in emails for at-risk students across a term. |
+| Weekly Announcement Auto-Drafter | A course page | Drafts this week's announcement from what is actually due. |
+| Discussion to Word Exporter | A discussion page | Exports the thread — original post and all replies — as a .docx file. |
 
 ## How it works
 
@@ -29,7 +28,7 @@ Each tool runs in your own browser, signed in as you, and calls the Canvas REST 
 
 Notes and limits:
 
-- Run the toolkit from inside a course — most tools read the course ID from the page address.
+- Three tools read the course ID from the page address, so run those from a course page; three ask you to pick a term and work from anywhere; the discussion exporter runs on a discussion.
 - Canvas returns at most 100 items per request, so very large courses may need a manual look past that.
 - The email and announcement tools write drafts. They do not send or post anything.
 - Rosters, grades and engagement data are protected student records. Handle exports accordingly.

@@ -86,7 +86,7 @@ footer {
 <div class="wrap">
 
   <h1>Canvas Toolkit</h1>
-  <p class="subhead">One bookmark. A menu of tools that run inside your own Canvas course &#8212; no plugin, no install request, no data leaving Canvas.</p>
+  <p class="subhead">One bookmark. Seven tools that run inside Canvas, in your own browser &#8212; no plugin, no install request, no data leaving Canvas.</p>
 
   <div class="install-box">
     <a class="bookmarklet-btn is-loading" id="install-btn" href="canvas-toolkit-launcher.html">Canvas Toolkit</a>
@@ -105,38 +105,41 @@ footer {
   <h2>What's in the toolkit</h2>
   <div class="tablewrap">
     <table class="tools">
-      <tr><th>Tool</th><th>What it does</th></tr>
+      <tr><th>Tool</th><th>Run it from</th><th>What it does</th></tr>
       <tr>
         <td>Syllabus Auto-Builder</td>
-        <td>Reads your published modules, assignments and grading groups and builds a syllabus summary &#8212; weekly schedule, assignment list, grading breakdown, and a list of anything still unpublished. Downloads as a Word file you can edit.</td>
+        <td>A course page</td>
+        <td>Builds a weekly schedule, assignment list and grading breakdown from the course's published modules and assignments &#8212; plus a list of anything still unpublished. Downloads as a Word file you can edit.</td>
       </tr>
       <tr>
         <td>Class Roster Builder</td>
-        <td>Builds a printable roster of the students in the course, with contact and last-activity information pulled straight from Canvas.</td>
+        <td>Anywhere (pick a term)</td>
+        <td>Full student rosters &#8212; name, email, section, last access and grade &#8212; for all your courses in the term you choose.</td>
       </tr>
       <tr>
         <td>At-Risk Early Warning Dashboard</td>
-        <td>Flags students whose grades, submissions or participation suggest they are falling behind, so you can reach out while it still matters.</td>
+        <td>Anywhere (pick a term)</td>
+        <td>Flags inactive, low-grade and missing-work students across a term, so you can reach out while it still matters.</td>
       </tr>
       <tr>
         <td>Peer Comparison Snapshot</td>
-        <td>Shows how one student's activity and scores compare with the rest of the section, without you having to pull the gradebook apart.</td>
+        <td>A course page</td>
+        <td>An anonymized comparison of one student against the rest of the course.</td>
       </tr>
       <tr>
         <td>Re-Engagement Email Drafter</td>
-        <td>Drafts personalized check-in messages to students who have gone quiet, ready for you to review, edit and send.</td>
+        <td>Anywhere (pick a term)</td>
+        <td>Drafts check-in emails for at-risk students across a term, ready for you to review, edit and send.</td>
       </tr>
       <tr>
         <td>Weekly Announcement Auto-Drafter</td>
-        <td>Drafts a weekly announcement from what is actually due that week in your course, so you start from a draft instead of a blank box.</td>
+        <td>A course page</td>
+        <td>Drafts this week's announcement for the course from what is actually due.</td>
       </tr>
       <tr>
         <td>Discussion to Word Exporter</td>
-        <td>Exports a discussion thread &#8212; posts and replies, in order &#8212; to a Word document for grading, archiving or accreditation files.</td>
-      </tr>
-      <tr>
-        <td>Engagement Report</td>
-        <td>Summarizes participation across the course: who is active, who is drifting, and how that has changed over time.</td>
+        <td>A discussion page</td>
+        <td>Exports the discussion thread &#8212; original post and all replies, in order &#8212; as a .docx file.</td>
       </tr>
     </table>
   </div>
@@ -146,7 +149,7 @@ footer {
     <p>Every tool runs in your own browser, signed in as you, and asks Canvas for the same information Canvas already shows you. Nothing is sent to an outside server, and the toolkit can never see a course you don't have access to.</p>
   </div>
   <ul>
-    <li><strong>Run it from inside a course.</strong> Most tools read the course ID out of the page address, so start from a course page rather than your dashboard.</li>
+    <li><strong>Some tools need a course page.</strong> The syllabus, peer comparison and announcement tools read the course ID out of the page address. The roster, at-risk and email tools run from anywhere and ask you to pick a term; the discussion exporter runs on a discussion page.</li>
     <li><strong>Large courses may be trimmed.</strong> Canvas returns at most 100 items per request, so very large courses can need a manual look at anything past that.</li>
     <li><strong>Drafts are drafts.</strong> The email and announcement tools write text for you to review &#8212; they do not send or post anything on their own.</li>
     <li><strong>Student data stays student data.</strong> Rosters, grades and engagement reports are protected records. Treat anything you export the way you would treat a printed gradebook.</li>
@@ -155,7 +158,7 @@ footer {
   <h2>If something doesn't work</h2>
   <ul>
     <li><strong>Nothing happens when you click the bookmark.</strong> Make sure you are on a Canvas page and signed in, then reload the page and try again.</li>
-    <li><strong>The menu opens but a tool reports an error.</strong> Check that you are inside a course &#8212; the address should contain <code>/courses/</code> and a number.</li>
+    <li><strong>A tool says you're in the wrong place.</strong> The course-specific tools need an address containing <code>/courses/</code> and a number; the discussion exporter needs to be run on the discussion itself.</li>
     <li><strong>The bookmark saved as a normal web page.</strong> Delete it and drag the blue button again; a bookmarklet's address starts with <code>javascript:</code> rather than <code>https:</code>.</li>
   </ul>
 
