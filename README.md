@@ -1,0 +1,1 @@
+Install in bookmark bar
