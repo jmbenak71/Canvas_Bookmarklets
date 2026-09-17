@@ -21,6 +21,8 @@ A small set of browser bookmarklets for the [Canvas LMS](https://www.instructure
 | Re-Engagement Email Drafter | Anywhere (pick a term) | Drafts check-in emails for at-risk students across a term. |
 | Weekly Announcement Auto-Drafter | A course page | Drafts this week's announcement from what is actually due. |
 | Discussion to Word Exporter | A discussion page | Exports the thread — original post and all replies — as a .docx file. |
+| Canvas Grade Report | Anywhere (pick a term) | Active and inactive students with grades, activity and last submission date, with live search and an Excel export. |
+| Pre-No-Show Report | Anywhere (pick a term) | Flags zero-participation students for financial-aid no-show reporting and drafts the outreach for you to review and send. |
 
 ## How it works
 
@@ -28,12 +30,13 @@ Each tool runs in your own browser, signed in as you, and calls the Canvas REST 
 
 Notes and limits:
 
-- Three tools read the course ID from the page address, so run those from a course page; three ask you to pick a term and work from anywhere; the discussion exporter runs on a discussion.
+- Three tools read the course ID from the page address, so run those from a course page; five ask you to pick a term and work from anywhere; the discussion exporter runs on a discussion.
 - Canvas returns at most 100 items per request, so very large courses may need a manual look past that.
-- The email and announcement tools write drafts. They do not send or post anything.
+- The email, announcement and no-show outreach tools write drafts. They do not send or post anything.
 - Rosters, grades and engagement data are protected student records. Handle exports accordingly.
 
 ## Files
 
 - `index.html` — the install and documentation page (served by GitHub Pages).
 - `canvas-toolkit-launcher.html` — the toolkit install page, with the bookmarklet and its full source.
+- `canvas-toolkit-launcher.js` — the readable source for the bookmarklet, kept in step with the copy embedded in the install page.
